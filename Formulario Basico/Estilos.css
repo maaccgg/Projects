@@ -1,0 +1,95 @@
+
+body{
+    background-color: darkkhaki
+}
+#titulo-principal{
+    display: flex;
+    justify-content: center;
+}
+
+
+.caja-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    width: 350px;           /* Un poco más ancho para que el texto no se amontone */
+    padding: 20px;          /* Espacio interno para que nada toque los bordes */
+    gap: 15px;              /* Espacio uniforme entre cada bloque de pregunta */
+    border-radius: 8px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+}
+
+.caja-nombres{
+    display: flex;
+    flex-direction: column;
+    width: 100%;            /* Ocupa todo el ancho disponible del padre */
+    align-items: center;
+}
+
+#boton-enviar-formulario{
+    background-color: beige;
+    border: 10px; color: black;
+    width: 89px;
+    height: 28px;
+    border-radius: 30px;
+    border: 1px solid black
+}
+
+#muro{
+    width: 350px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 15px; /* Espacio entre publicaciones */
+    background-color: whitesmoke;
+}
+
+#boton-validar-info{
+    background-color: beige;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid black
+}
+
+#boton-reiniciar{
+    background-color: beige;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid black
+}
+
+
+.validacion-botones{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+#agradecimiento{
+    display: none;
+    position: fixed; /* Se posiciona respecto a la ventana del navegador */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% del ancho de pantalla */
+    height: 100vh; /* 100% del alto de pantalla */
+    color: white;
+    font-size: 24px;
+    
+    /* EL MÉTODO DE CENTRADO TOTAL: */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    z-index: 1000;           /* Asegura que esté por encima de todo */
+}
+    
+#pregunta {
+    color: white;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    z-index: 1000;           /* Asegura que esté por encima de todo */
+
+}
+

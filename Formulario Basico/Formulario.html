@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= utf-8/>
+    <link rel="stylesheet" href="./Estilos.css">   
+</head>
+<body>
+
+<section id="Cajas-Contenedor">
+    <h1 id="titulo-principal">Informacion Cliente </h1>
+
+<div id="caja-cliente" class="caja-principal"> 
+   <label for= razon-social> Cual su razon social? </label>
+   <input type="text" id="razon-social">   
+   <div class="caja-nombres">
+    <label for = nombre-cliente> Cual es su nombre?</label>
+    <input type="text" id="nombre-cliente">
+   </div>
+   <div class= "caja-nombres"> 
+    <label for = "numero-telefonico"> Cual es su numero telefonico? </label>
+    <input type ="text" id="numero-telefonico">
+   </div>
+    <div class= "caja-nombres"> 
+    <label for = "correo-electronico"> Cual es su correo? </label>
+    <input type ="text" id="correo-electronico">
+   </div>
+   <button id="boton-enviar-formulario">Enviar
+   </button>
+</div>
+
+ <div id="muro" class="input-muro">
+   </div> 
+</section>
+
+<section id="validacion-formulario">
+<h2 id="pregunta">Tu información esta ok? </h2>
+<h3 id="agradecimiento"  class="pantalla-full"> Gracias por tu información! 👌 </h3>
+</section>
+
+<section id ="botones-validacion" class="validacion-botones">
+<button id="boton-validar-info">Si, está ok </button>
+<button id= "boton-reiniciar"> Reiniciar </button>   
+</section>
+
+
+<script src="Formulario.js"> </script>
+</body>
+</html>
