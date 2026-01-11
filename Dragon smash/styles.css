@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&family=Oswald:wght@200..700&display=swap');
+
+body{
+  font-family: "Oswald", sans-serif;
+  background-image: url(Imagenes/Arena\ de\ Combate.jpg);
+  background-size: cover;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: beige;
+    
+}
+#seleccionar-mascota{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    background-color: #A91D3A;
+    border-radius: 30px;
+    width: 423px;
+    height: 53px;
+    color: white;
+
+}
+.subtitulo{
+    color: #A3B087;
+}
+.tarjeta-de-mokepon{
+    display: flex;
+    width: 145px;
+    height: 151px;
+    background: #E0CCBE ;
+    padding: 10px;
+    margin: 14px;
+    border: 3px solid #A91D3A;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.tarjeta-de-mokepon img{
+
+    width: 60px;
+    height: 60px;
+}
+.tarjetas, .tarjetas-ataque{
+    display:flex;
+    gap: 10px;
+}
+input{
+    display: none;
+}
+input:checked + label{
+
+background-color: #B2A59B
+
+}
+.estilo-boton{
+    width: 89px;
+    height: 28px;
+    border-radius: 30px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: beige;
+    border: 2px; color: black;
+    margin-top: 30px;
+}
+#seleccionar-ataque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-de-ataque{
+    background-color:#E0CCBE;
+    border: 2px solid #A91D3A;
+    color: white;
+    width: 80px;
+    height: 50px;
+    border-radius: 30px;
+    
+}
+#mensajes{
+    background-color: beige;
+    display: flex;
+    width: 204px;
+    height: 104px;
+    margin-top: 38px;
+    border-radius: 20px;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#boton-reiniciar{
+    background-color: beige;
+    border: 2px; color: black;
+    width: 89px;
+    height: 28px;
+    border-radius: 30px;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    border-radius: 20px;
+    place-items: center;
+    color: whitesmoke;
+    gap: 100px
+
+
+}
+@media(max-width: 560px){
+    .tarjetas, .tarjetas-ataque{
+        flex-direction:column
+    }
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#ver-mapa button{
+    width: 80px;
+    height: 28px;
+    border-radius: 30px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: beige;
+    border: 2px; color: black;
+    margin: 10px 0
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 200px){
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
