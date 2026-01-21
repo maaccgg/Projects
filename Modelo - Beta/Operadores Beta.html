@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="./Estilazo.css">
+    <title> Unidades Beta</title>
+</head>
+<body>
+
+<h1 class="titulo-principal">Dashboard BETA</h1>
+
+<main class="contenedor-principal">     
+    <nav class="barra-lateral">
+        <div>
+            <h4><a href="Dashboard Beta.html" class="liga-lateral"> Inicio <img class="icono-lateral" src="Imagenes/Libreta.png" alt="libreta1"></a></h4>
+            <h4><a href="Unidades Beta.html" class="liga-lateral">Unidades <img class="icono-lateral" src="Imagenes/Camion-azul.png" alt="camionazul1"></a></h4>
+            <h4><a href="Finanzas Beta.html" class="liga-lateral">Ingresos <img class="icono-lateral" src="Imagenes/Ingresos.png" alt="dinero1"></a></h4>
+            <h4><a href="Operadores Beta.html" class="liga-lateral">Operadores <img class="icono-lateral" src="Imagenes/Operador.png" alt="operadores1"></a></h4>
+        </div>
+    </nav>
+
+
+    <section class="contenido-dashboard">
+        <h1>Operadores Beta</h1>    
+    <button id="agregar-operador" class="boton-guardar">Agregar Operador</button>
+
+
+             <div id="formulario-operadores">
+          <div class="ventana-blanca-operador"><div id ="cerrando-formulario" class="cerrar-formulario">x</div>
+            <h3>Insertar datos operador</h3>
+                <form id="form-operador">
+                    <input type="text" id="nombre-operador" placeholder="Nombre" required>
+                    <input type="text" id="licencia-operador" placeholder="Tipo Licencia" required>
+                    <input type="text" id="telefono-operador" placeholder="Teléfono" required>
+                    <select id="estatus-operador">
+                        <option value="Disponible">Disponible</option>
+                        <option value="En Ruta">En Ruta</option>
+                    </select>
+                    <button type="submit" class="boton-guardar">Agregar a bitacora </button>
+                </form>
+            </div></div>  
+
+
+        <table class="tabla-unidades">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Licencia</th>
+                <th>Teléfono</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan Perez</td>    
+                <td>ABC123456</td>
+                <td>555-1234</td>
+                <td><span class="estado-unidad">Activo</span></td>
+            </tr>
+            <tr>
+                <td>Maria Lopez</td>
+                <td>DEF654321</td>
+                <td>555-5678</td>
+                <td><span class="estado-unidad">Inactivo</span></td>
+            </tr>
+        </tbody>
+    
+
+    </section>
+</main>
+
+<script src="Operadores Beta.js"></script>
+</body>
+</html>

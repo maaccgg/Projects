@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="./Estilazo.css">
+    <title> Unidades Beta</title>
+</head>
+<body>
+
+<h1 class="titulo-principal">Dashboard BETA</h1>
+
+<main class="contenedor-principal">     
+    <nav class="barra-lateral">
+        <div>
+            <h4><a href="Dashboard Beta.html" class="liga-lateral"> Inicio <img class="icono-lateral" src="Imagenes/Libreta.png" alt="libreta1"></a></h4>
+            <h4><a href="Unidades Beta.html" class="liga-lateral">Unidades <img class="icono-lateral" src="Imagenes/Camion-azul.png" alt="camionazul1"></a></h4>
+            <h4><a href="Finanzas Beta.html" class="liga-lateral">Ingresos <img class="icono-lateral" src="Imagenes/Ingresos.png" alt="dinero1"></a></h4>
+            <h4><a href="Operadores Beta.html" class="liga-lateral">Operadores <img class="icono-lateral" src="Imagenes/Operador.png" alt="operadores1"></a></h4>
+        </div>
+    </nav>
+
+
+    <section class="contenido-dashboard">
+        <h1>Finanzas Beta</h1>    
+  
+<button type="button" id="nuevo-registro" class="boton-guardar"> + Nuevo registro </button>
+
+         <div id="formulario-ingresos">
+          <div class="ventana-blanca"><div id ="cerrando-formulario" class="cerrar-formulario">x</div>
+            <h3>Insertar Ingresos</h3>
+                <form id="form-unidad">
+                    <input type="text" id="cliente" placeholder="Cliente" required>
+                    <input type="text" id="fecha" placeholder="Fecha" required>
+                    <input type="text" id="Unidad" placeholder="Unidad" required>
+                    <input type="text" id="Monto" placeholder="Costo del viaje" required>
+                    <input type="text" id="Status" placeholder="Status" required>
+                    <select id="estatus">
+                        <option value="Disponible">Pendiente</option>
+                        <option value="En Ruta">Liquidado</option>
+                    </select>
+                    <button type="submit" class="boton-guardar">Agregar a Flota</button>
+                </form>
+            </div></div>  
+       
+
+        <table class="tabla-unidades">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Fecha</th>
+                <th>Unidad</th>
+                <th>Monto</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Panchito Client</td>    
+                <td>01/06/2024</td>
+                <td>001</td>
+                <td>$5,500</td>
+                <td><span class="estado-ingreso"> Liquidado </span></td>
+            </tr>
+            <tr>
+                <td>Maria Lopez</td>    
+                <td>03/06/2024</td>
+                <td>002</td>
+                <td>$3,200</td>
+                <td><span class="estado-ingreso"> En Proceso </span></td>   
+            </tr>
+            <tr>    
+                <td>Empresa XYZ</td>    
+                <td>05/06/2024</td>
+                <td>003</td>
+                <td>$7,800</td>
+                <td><span class="estado-ingreso"> Liquidado </span></td>    
+            </tr>
+            <tr>    
+                <td>Juan Perez</td>    
+                <td>07/06/2024</td>
+                <td>004</td>
+                <td>$4,100</td>
+                <td><span class="estado-ingreso"> Pendiente </span></td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+</main>
+
+<script src="./Ingresos Beta.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="./Estilazo.css">
+    <title> Unidades Beta</title>
+</head>
+<body>
+
+<h1 class="titulo-principal">Dashboard BETA</h1>
+
+<main class="contenedor-principal">     
+    <nav class="barra-lateral">
+        <div>
+            <h4><a href="Dashboard Beta.html" class="liga-lateral"> Inicio <img class="icono-lateral" src="Imagenes/Libreta.png" alt="libreta1"></a></h4>
+            <h4><a href="Unidades Beta.html" class="liga-lateral">Unidades <img class="icono-lateral" src="Imagenes/Camion-azul.png" alt="camionazul1"></a></h4>
+            <h4><a href="Finanzas Beta.html" class="liga-lateral">Ingresos <img class="icono-lateral" src="Imagenes/Ingresos.png" alt="dinero1"></a></h4>
+            <h4><a href="Operadores Beta.html" class="liga-lateral">Operadores <img class="icono-lateral" src="Imagenes/Operador.png" alt="operadores1"></a></h4>
+        </div>
+    </nav>
+
+
+    <section class="contenido-dashboard">
+        <h1>Gestion de flota BETA  </h1>
+        <div class="contenedor-formulario">
+            <h3>Registrar Nueva Unidad</h3>
+                <form id="form-unidad">
+                    <input type="text" id="economico" placeholder="Económico (Ej. 001)" required>
+                    <input type="text" id="placas" placeholder="Placas" required>
+                    <input type="text" id="chofer" placeholder="Nombre del Chofer" required>
+                    <select id="estatus">
+                        <option value="Disponible">Disponible</option>
+                        <option value="En Ruta">En Ruta</option>
+                        <option value="Mantenimiento">Mantenimiento</option>
+                    </select>
+                    <button type="submit" class="boton-guardar">Agregar a Flota</button>
+                </form>
+        </div>
+
+
+        <table class="tabla-unidades">
+        <thead>
+            <tr>
+                <th>Economico</th>
+                <th>Placas</th>
+                <th>Estado</th>
+                <th>Ubicación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>ABC-123</td>
+                <td><span class="estado-unidad">Activo</span></td>
+                <td><span class="ubicacion-unidad">Ciudad A</span></td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>DEF-456</td>
+                <td><span class="estado-unidad">En Mantenimiento</span></td>
+                <td><span class="ubicacion-unidad">Taller B</span></td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>GHI-789</td>
+                <td><span class="estado-unidad">Activo</span></td>
+                <td><span class="ubicacion-unidad">Ciudad C</span></td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+</main>
+</body>
+</html>

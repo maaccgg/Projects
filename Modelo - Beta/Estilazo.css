@@ -1,0 +1,170 @@
+
+.contenedor-principal {
+    display: flex;
+    height: 100vh; /* Para que ocupe el 100% de la altura de la pantalla */
+}
+
+.barra-lateral {
+    width: 100px;
+    background-color: #2c3e50; /* Un color oscuro e institucional */
+    color: white;
+    padding: 10px;  
+    text-align: center;
+}
+
+.contenido-dashboard{
+    flex-grow: 1; /* Esto hace que el contenido ocupe todo el espacio sobrante a la derecha */
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.titulo-principal{
+    text-align: center;
+}
+
+.tarjetas-dashboard {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    gap: 30px;
+}
+
+.tarjeta{
+    background-color: beige;  
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.liga-lateral{
+    color: white;
+    text-decoration: none;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.liga-lateral:hover{
+    color: white;
+    opacity: 0.8; 
+}
+
+.icono-lateral{
+    text-align: center;
+    width: 60%;
+}
+
+.tabla-unidades{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: beige; 
+}
+
+.tabla-unidades th, .tabla-unidades td{ 
+ text-align: center;
+}
+
+.tabla-unidades th{
+    background-color: #2c3e50; /* El color de tu barra lateral para dar identidad */
+    color: white;
+}
+
+.contenedor-formulario {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+#form-unidad {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Por si la pantalla es chica, que los campos se acomoden */
+    align-items: center;
+}
+
+#form-unidad input, #form-unidad select, #form-operador input, #form-operador select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1; /* Esto hace que todos los campos crezcan parejo */
+    min-width: 150px;
+}
+
+.boton-guardar {
+    background-color: #1abc9c; /* Color verde éxito */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-guardar:hover {
+    background-color: #16a085;
+}
+
+#formulario-ingresos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Esto oscurece el fondo */
+    display: none; /* JS cambiará esto a flex */
+    justify-content: center; /* Centra horizontal */
+    align-items: center; /* Centra vertical */
+    z-index: 1000;
+}
+
+
+.cerrar-formulario{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+.ventana-blanca {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative; /* Para que la 'X' se mueva respecto a esta caja */
+    display: flex;
+    flex-direction: column; /* Esto pone el título arriba y el formulario abajo */
+    gap: 20px;
+}
+
+#formulario-operadores{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Esto oscurece el fondo */
+    justify-content: center; /* Centra horizontal */
+    align-items: center; /* Centra vertical */
+    z-index: 1000;
+}
+
+.ventana-blanca-operador{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    position: relative; /* Para que la 'X' se mueva respecto a esta caja */
+    display: flex;
+    flex-direction: column; /* Esto pone el título arriba y el formulario abajo */
+    gap: 20px;
+}
